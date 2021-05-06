@@ -1,0 +1,7 @@
+- op: replace
+  path: /metadata/name
+  value: cluster2
+
+- op: replace
+  path: /metadata/labels/name
+  value: cluster2

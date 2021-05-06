@@ -1,0 +1,7 @@
+- op: replace
+  path: /metadata/name
+  value: cluster2-worker
+
+- op: replace
+  path: /spec/clusterDeploymentRef/name
+  value: cluster2

@@ -1,0 +1,5 @@
+resources:
+- 01_clusterdeployment.yaml
+- 02_managedcluster.yaml
+- 03_machinepool.yaml
+- 08_klusteraddon.yaml
