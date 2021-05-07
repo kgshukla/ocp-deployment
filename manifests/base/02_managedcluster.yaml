@@ -7,6 +7,5 @@ metadata:
     name: CLUSTER_NAME
     vendor: OpenShift
   name: CLUSTER_NAME
-  namespace: cluster2
 spec:
   hubAcceptsClient: true
