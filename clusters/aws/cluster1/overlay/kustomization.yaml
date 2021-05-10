@@ -1,0 +1,37 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../../../../manifests/base
+
+resources:
+- namespace.yaml
+
+patchesJson6902:
+- target:
+    group: hive.openshift.io
+    version: v1
+    kind: ClusterDeployment
+    name: CLUSTER_NAME
+  path: patch-clusterdeployment.yaml
+
+- target:
+    group: cluster.open-cluster-management.io
+    version: v1
+    kind: ManagedCluster
+    name: CLUSTER_NAME
+  path: patch-managedcluster.yaml
+
+- target:
+    group: hive.openshift.io
+    version: v1
+    kind: MachinePool
+    name: CLUSTER_NAME-worker
+  path: patch-machinepool.yaml
+
+- target:
+    group: agent.open-cluster-management.io
+    version: v1
+    kind: KlusterletAddonConfig
+    name: CLUSTER_NAME
+  path: patch-addonconfig.yaml
