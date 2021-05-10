@@ -10,3 +10,7 @@
   path: /spec/platform/aws/zones
   value: 
     - ap-southeast-1a
+
+- op: replace
+  path: /spec/replicas
+  value: 2
