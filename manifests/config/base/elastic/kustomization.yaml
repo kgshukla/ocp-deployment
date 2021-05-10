@@ -1,0 +1,8 @@
+resources:
+- 01_namespace.yaml
+- 02_namespace_logging.yaml
+- 03_elastic_og.yaml
+- 04_elastic_sub.yaml
+- 05_clusterlogging_og.yaml
+- 06_clusterloggin_sub.yaml
+- 07_clo_instance.yaml
