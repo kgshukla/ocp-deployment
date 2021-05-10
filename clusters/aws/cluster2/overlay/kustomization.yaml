@@ -35,3 +35,4 @@ patchesJson6902:
     kind: KlusterletAddonConfig
     name: CLUSTER_NAME
   path: patch-addonconfig.yaml
+
