@@ -1,0 +1,16 @@
+- op: replace
+  path: /metadata/name
+  value: cluster3-worker
+
+- op: replace
+  path: /spec/clusterDeploymentRef/name
+  value: cluster3
+
+- op: add
+  path: /spec/platform/aws/zones
+  value: 
+    - ap-southeast-1a
+
+- op: replace
+  path: /spec/replicas
+  value: 1

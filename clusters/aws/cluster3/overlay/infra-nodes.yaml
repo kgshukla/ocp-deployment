@@ -1,0 +1,24 @@
+apiVersion: hive.openshift.io/v1
+kind: MachinePool
+metadata:
+  name: cluster3-infra
+  namespace: cluster3
+spec:
+  clusterDeploymentRef:
+    name: cluster3
+  name: infra
+  platform:
+    aws:
+      rootVolume:
+        iops: 2000
+        size: 100
+        type: io1
+      type: m5.xlarge
+      zones:
+      - ap-southeast-1a
+  labels:
+    node-role.kubernetes.io/infra: ""
+  taints:
+  - effect: NoSchedule
+    key: node-role.kubernetes.io/infra
+  replicas: 3

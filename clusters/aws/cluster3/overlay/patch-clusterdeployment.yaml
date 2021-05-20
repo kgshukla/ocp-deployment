@@ -1,0 +1,11 @@
+- op: replace
+  path: /metadata/name
+  value: cluster3
+
+- op: replace
+  path: /spec/baseDomain
+  value: sandbox234.opentlc.com
+
+- op: replace
+  path: /spec/clusterName
+  value: cluster3

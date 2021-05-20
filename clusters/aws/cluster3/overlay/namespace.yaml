@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: ACM cluster deployment
+    openshift.io/display-name: ACM cluster deployment
+  labels:
+    name: cluster3
+  name: cluster3
