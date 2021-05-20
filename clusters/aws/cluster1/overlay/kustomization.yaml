@@ -6,7 +6,8 @@ bases:
 
 resources:
 - namespace.yaml
-
+- infra-nodes.yaml
+  
 patchesJson6902:
 - target:
     group: hive.openshift.io
