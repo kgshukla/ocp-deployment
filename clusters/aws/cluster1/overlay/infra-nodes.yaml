@@ -15,7 +15,7 @@ spec:
         type: io1
       type: m5.xlarge
       zones:
-      - ap-southeast-1a
+      - ap-southeast-1b
   labels:
     node-role.kubernetes.io/infra: ""
   taints:
